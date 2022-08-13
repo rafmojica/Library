@@ -410,6 +410,30 @@ footer {
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
 
+/* BIG DEVICES */
+
+@media (max-width:1130px) {
+    
+    .book {
+        margin-bottom: 100px;
+    }
+}
+
+/* IPAD */
+
+@media (max-width: 820px) {
+    
+    .book {
+        margin-bottom: 20px;
+    }
+    
+    .book__img--wrapper {
+        max-height: 220px;
+    }
+}
+
+/* WIDE DEVICES */
+
 @media (max-width: 768px) {
     .header__description {
         padding: 0 24px;
@@ -435,23 +459,31 @@ footer {
     .footer__list {
         width: 100%;
     }
-}
 
-/* BIG DEVICES */
-
-@media (max-width:1130px) {
-
-    .book {
-        margin-bottom: 100px;
+    .book__img--wrapper {
+        max-width: 280px;
+        max-height: 380px;
     }
 }
 
-/* IPAD */
+/* SURFACE DUO */
 
-@media (max-width: 820px) {
+@media (max-width: 540px) {
+    .book__img--wrapper {
+        max-height: 380px;
+    }
+}
+
+/* IPHONE XR, 12 PRO, SE */
+
+@media (max-width: 414px) {
 
     .book {
-        margin-bottom: 100px;
+        margin-bottom: 10px;
+    }
+
+    .book__img--wrapper {
+        max-height: 220px;
     }
 }
 
