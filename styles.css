@@ -323,11 +323,6 @@ select {
   padding: 0 16px;
 }
 
-/* .latest__books {
-  display: flex;                tried copying .books, didn't work.
-  flex-wrap: wrap;
-} */
-
 .books {
   display: flex;
   flex-wrap: wrap;
@@ -375,6 +370,36 @@ select {
   text-decoration: line-through;
   padding-right: 8px;
   color: #bfbfbf;
+}
+
+.books__loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 64px;
+  font-size: 64px;
+  color: #7342d6;
+}
+
+.books__loading--spinner {
+  display: none !important;
+}
+
+.books__loading .books__loading--spinner {
+  display: block !important;
+}
+
+.fa-spinner {
+  animation: rotate 600ms infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* 
