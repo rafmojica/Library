@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="index.js"></script>
+    <script src="books.js"></script>
   </head>
 
   <body>
@@ -193,12 +194,19 @@
       <section id="recent">
         <div class="container">
           <div class="row">
+            <div class="books__header">
             <h2 class="section__title">
               Latest <span class="purple">Books</span>
             </h2>
-
-            <div class="books">
-              <div class="book">
+            <select id="filter">
+              <option value="" disabled selected>Sort</option>
+              <option value="LOW_TO_HIGH">Price, Low to High</option>
+              <option value="HIGH_TO_LOW">Price, High to Low</option>
+              <option value="RATING">Rating</option>
+            </select>
+          </div>
+          <div class="latest__books books">
+              <!-- <div class="book">
                 <figure class="book__img--wrapper">
                   <img src="./assets/book-1.jpeg" alt="" class="book__img" />
                 </figure>
@@ -211,7 +219,7 @@
                   <i class="fas fa-star-half-alt"></i>
                 </div>
                 <div class="book__price">$19.99</div>
-              </div>
+              </div> -->
 
               <div class="book">
                 <figure class="book__img--wrapper">
